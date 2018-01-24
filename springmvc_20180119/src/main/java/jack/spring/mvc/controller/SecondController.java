@@ -1,18 +1,15 @@
-package org.jack.springmvc.controller;
+package jack.spring.mvc.controller;
 
 import org.springframework.cache.interceptor.CacheInterceptor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.io.Serializable;
-
 @Controller
-public class MyController implements Serializable {
+public class SecondController {
 
     @GetMapping("/")
-    public String index() {
+    public String getIndex() {
         new CacheInterceptor();
         return "index";
     }
-
 }
