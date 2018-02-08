@@ -2,8 +2,11 @@ package jack.springjpa.entities;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@Entity
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "customer")
 public class ECustomer {
 
     private long id;
@@ -13,6 +16,10 @@ public class ECustomer {
     private String lastname;
 
     public ECustomer() {
+    }
+
+    public ECustomer(String firstname, String lastname) {
+
     }
 
     public long getId() {
