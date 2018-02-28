@@ -1,13 +1,10 @@
 package jack.javacore.lintcode.basics.insert_interval_30;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Solution {
 
-    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+    public List<Interval> insert1(List<Interval> intervals, Interval newInterval) {
         // write your code here
         LinkedList<Interval> intervals1 = new LinkedList<Interval>(intervals);
         int start = newInterval.start;
@@ -26,6 +23,77 @@ public class Solution {
             }
         }
 
+        return null;
+    }
+
+    public List<Interval> insert2(List<Interval> intervals, Interval newInterval) {
+        // write your code here
+        ArrayList<Interval> intervalList = new ArrayList(intervals);
+        int start = newInterval.start;
+        int end = newInterval.end;
+
+        if (start > intervalList.get(0).start /*|| start < inter*/) {
+
+        }
+        for (Interval item : intervalList) {
+            if (start <= item.start && start >= item.end) {
+                if (end >= item.end) {
+                    return intervals;
+                }
+            }
+        }
+        return null;
+    }
+
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+
+        int start = newInterval.start;
+        int end = newInterval.end;
+
+        LinkedList<Integer> integers = new LinkedList<Integer>();
+        for (Interval item : intervals) {
+            integers.add(item.start);
+            integers.add(item.end);
+        }
+
+        ListIterator<Integer> iter = integers.listIterator();
+        boolean startIsEnd = true;
+        Integer next = null;
+        while (iter.hasNext()) {
+            next = iter.next();
+            if (start <= next) {
+                startIsEnd = false;
+                if (iter.previousIndex() % 2 == 0) {
+//                    iter.remove();
+//                    iter.add(start);
+                    if (end <= next) {
+                        return intervals;
+                    }
+                    ListIterator<Integer> subIter = integers.listIterator(iter.previousIndex());
+                    while (subIter.hasNext()) {
+                        if (end <= subIter.next()) {
+                            iter.remove();
+                            iter.add(end);
+                            return transferIntergerToInterval(integers);
+                        }
+                        iter.next();
+                        iter.remove();
+                    }
+                } else if (iter.previousIndex()%2 == 1) {
+                    iter.add(start);
+                }
+            }
+            if (startIsEnd) {
+                intervals.add(newInterval);
+                return intervals;
+            }
+        }
+
+
+        return null;
+    }
+
+    private List<Interval> transferIntergerToInterval(List<Integer> integers) {
         return null;
     }
 }
