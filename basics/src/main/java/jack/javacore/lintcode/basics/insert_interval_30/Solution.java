@@ -63,13 +63,13 @@ public class Solution {
             next = iter.next();
             if (start <= next) {
                 startIsEnd = false;
-                if (iter.previousIndex() % 2 == 0) {
+                if (iter.previousIndex() % 2 == 1) {
 //                    iter.remove();
 //                    iter.add(start);
                     if (end <= next) {
                         return intervals;
                     }
-                    ListIterator<Integer> subIter = integers.listIterator(iter.previousIndex());
+                    /*ListIterator<Integer> subIter = integers.listIterator(iter.nextIndex());
                     while (subIter.hasNext()) {
                         if (end <= subIter.next()) {
                             iter.remove();
@@ -78,6 +78,14 @@ public class Solution {
                         }
                         iter.next();
                         iter.remove();
+                    }*/
+                    while (iter.hasNext()) {
+                        if (end > iter.next()) {
+                            iter.previous();
+                            iter.remove();
+                            iter.next();
+
+                        }
                     }
                 } else if (iter.previousIndex()%2 == 1) {
                     iter.add(start);
@@ -95,5 +103,22 @@ public class Solution {
 
     private List<Interval> transferIntergerToInterval(List<Integer> integers) {
         return null;
+    }
+
+    public static void main(String[] args) {
+        LinkedList<Integer> integers = new LinkedList<Integer>();
+        integers.add(10);
+        integers.add(20);
+        integers.add(30);
+        integers.add(40);
+        integers.add(50);
+        integers.add(60);
+
+        ListIterator<Integer> iter = integers.listIterator(3);
+        while (iter.hasNext()) {
+            System.out.println("Iterator's previous index = " + iter.previousIndex());
+            System.out.println("Iterator's next index = " + iter.nextIndex());
+            System.out.println(iter.next());
+        }
     }
 }
