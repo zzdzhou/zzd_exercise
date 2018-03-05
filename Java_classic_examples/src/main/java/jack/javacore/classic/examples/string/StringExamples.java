@@ -1,7 +1,5 @@
 package jack.javacore.classic.examples.string;
 
-import javax.sound.midi.Soundbank;
-
 public class StringExamples {
     private int i = 1;
 
