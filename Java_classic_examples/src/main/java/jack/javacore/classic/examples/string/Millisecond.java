@@ -1,13 +1,13 @@
 package jack.javacore.classic.examples.string;
 
-import java.time.Instant;
+/*import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatter;*/
 
 public class Millisecond {
-
+/*
     public static void main(String[] args) {
         for (String timezone : ZoneId.getAvailableZoneIds()) {
             System.out.println(timezone);
@@ -25,9 +25,9 @@ public class Millisecond {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime localDateTime = LocalDateTime.parse(dateTimeS, dateFormatter);
         Instant instant = localDateTime.toInstant(ZoneOffset.ofHours(8));
-        instant.getLong();
+//        instant.getLong();
 
 
         return 0;
-    }
+    }*/
 }

@@ -1,13 +1,13 @@
 package jack.javacore.classic.examples.DateTime;
 
-import java.time.LocalDate;
+/*import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Properties;
+import java.util.Properties;*/
 
 public class CurrentDateTime {
-
+/*
     public static void main(String[] args) {
 //        Properties props = System.getProperties();
 //        System.out.println(props.toString());
@@ -36,5 +36,5 @@ public class CurrentDateTime {
         System.out.println(fNow);
         String fNow1 = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         System.out.println(fNow1);
-    }
+    }*/
 }
