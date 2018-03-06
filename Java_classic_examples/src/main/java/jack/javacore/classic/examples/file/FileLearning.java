@@ -1,16 +1,16 @@
 package jack.javacore.classic.examples.file;
 
-/*import java.io.File;
+import java.io.File;
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;*/
+import java.time.format.DateTimeFormatter;
 
 public class FileLearning {
 
-   /* String fileName = "";
+    String fileName = "";
 
     public static void main(String[] args) {
         try {
@@ -46,5 +46,5 @@ public class FileLearning {
         LocalDateTime dateTime = LocalDateTime.ofInstant(Instant.ofEpochMilli(file.lastModified()), ZoneId.systemDefault());
         System.out.println("This file was last modified at "
                 + dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
-    }*/
+    }
 }

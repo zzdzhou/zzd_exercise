@@ -1,13 +1,12 @@
 package jack.javacore.classic.examples.string;
 
-/*import java.time.Instant;
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;*/
+import java.time.format.DateTimeFormatter;
 
 public class Millisecond {
-/*
     public static void main(String[] args) {
         for (String timezone : ZoneId.getAvailableZoneIds()) {
             System.out.println(timezone);
@@ -29,5 +28,5 @@ public class Millisecond {
 
 
         return 0;
-    }*/
+    }
 }

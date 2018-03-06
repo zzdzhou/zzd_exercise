@@ -1,13 +1,12 @@
 package jack.javacore.classic.examples.DateTime;
 
-/*import java.time.Instant;
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Calendar;
-import java.util.Date;*/
+import java.util.Date;
 
 public class LegacyDates {
-/*
     public static void main(String[] args) {
         new LegacyDates().parseLegacyDate(new Date(), Calendar.getInstance());
     }
@@ -22,5 +21,5 @@ public class LegacyDates {
         System.out.println(dateTime1);
 
         return null;
-    }*/
+    }
 }
