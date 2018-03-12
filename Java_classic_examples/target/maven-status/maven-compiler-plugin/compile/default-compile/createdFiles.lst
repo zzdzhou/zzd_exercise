@@ -2,4 +2,5 @@ jack\javacore\classic\examples\DateTime\LegacyDates.class
 jack\javacore\classic\examples\string\StringExamples.class
 jack\javacore\classic\examples\string\Millisecond.class
 jack\javacore\classic\examples\DateTime\CurrentDateTime.class
+jack\javacore\classic\examples\DateTime\TimeZone.class
 jack\javacore\classic\examples\file\FileLearning.class
