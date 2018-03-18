@@ -22,6 +22,12 @@ public class EUser {
 
     }
 
+    public EUser(String name, String email) {
+        this.name = name;
+        this.email= email;
+        this.registerDate = new Date(new java.util.Date().getTime());
+    }
+
     public Long getId() {
         return id;
     }

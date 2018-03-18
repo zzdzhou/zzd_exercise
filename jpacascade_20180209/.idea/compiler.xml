@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jpacascade_20180209" target="1.5" />
+      <module name="jpacascade_20180209" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
