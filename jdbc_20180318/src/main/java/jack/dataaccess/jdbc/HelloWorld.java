@@ -15,7 +15,7 @@ public class HelloWorld {
                     "root", "zzde");
 
             Statement stat = con.createStatement();
-            ResultSet rs = stat.executeQuery("select * from user");
+            ResultSet rs = stat.executeQuery("select * from customer");
             while (rs.next()) {
                 String email = rs.getString("email");
                 System.out.println(email);
