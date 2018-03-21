@@ -9,11 +9,26 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <!-- java.sql and javax.sql are included in jdk-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.45</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>
