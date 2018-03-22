@@ -8,6 +8,8 @@
     <artifactId>jdbc_20180318</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>war</packaging>
+
     <dependencies>
         <!-- java.sql and javax.sql are included in jdk-->
         <dependency>

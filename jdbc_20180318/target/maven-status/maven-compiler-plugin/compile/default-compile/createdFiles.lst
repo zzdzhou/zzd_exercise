@@ -1,1 +1,4 @@
+jack\dataaccess\jdbc\datasource\DSConnection.class
 jack\dataaccess\jdbc\HelloWorld.class
+jack\dataaccess\jdbc\service\UserREST.class
+jack\dataaccess\jdbc\TestApplication.class
