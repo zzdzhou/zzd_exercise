@@ -1,0 +1,1 @@
+cmd.exe /X /C "C:\Software\Java\jdk1.8.0_151\bin\javac.exe @D:/Software_files/zzd_exercise/jdbc_20180318/target/classes/org.codehaus.plexus.compiler.javac.JavacCompiler2215889221476254711arguments"

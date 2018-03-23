@@ -6,4 +6,7 @@ import javax.ws.rs.core.Application;
 @ApplicationPath("/dstest")
 public class TestApplication extends Application {
 
+    public static void main(String[] args) {
+        springapplication
+    }
 }

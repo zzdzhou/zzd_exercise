@@ -1,6 +1,5 @@
 package jack.dataaccess.jdbc.service;
 
-import com.sun.org.glassfish.gmbal.ParameterNames;
 import jack.dataaccess.jdbc.datasource.DSConnection;
 
 import javax.jws.WebParam;

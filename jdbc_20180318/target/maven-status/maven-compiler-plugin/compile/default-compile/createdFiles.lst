@@ -1,4 +1,6 @@
 jack\dataaccess\jdbc\datasource\DSConnection.class
 jack\dataaccess\jdbc\HelloWorld.class
+org.codehaus.plexus.compiler.javac.JavacCompiler2215889221476254711arguments
 jack\dataaccess\jdbc\service\UserREST.class
 jack\dataaccess\jdbc\TestApplication.class
+javac.bat
