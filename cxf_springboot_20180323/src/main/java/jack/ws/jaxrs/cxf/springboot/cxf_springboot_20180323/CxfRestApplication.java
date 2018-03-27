@@ -29,7 +29,7 @@ public class CxfRestApplication {
 		sfb.setAddress("/");
 //		sfb.setServiceBeans(Arrays.asList(new HelloWorld()));
 		sfb.setServiceBean(new HelloWorld());
-		sfb.setFeatures(Arrays.asList(new LoggingFeature()));
+//		sfb.setFeatures(Arrays.asList(new LoggingFeature()));
 		return sfb.create();
 	}
 
