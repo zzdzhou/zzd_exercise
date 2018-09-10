@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML exercise</title>
+</head>
+<body>
+<ul>
+    <li><a href="#night-spots">Please refer to Local night spots</a></li>
+    <li><a href="#HTML">What is HTML</a></li>
+    <li><a href="#OGNL">Apache Commons OGNL - Object Graph Navigation Library</a></li>
+    <li><a href="#spring-data-jpa">Spring data jpa - core concepts</a></li>
+    <li><a href="#sample-code">code sample</a></li>
+</ul>
+<h2 id="night-spots">Local night spots</h2>
+<p>Sweetened carbonated beverages, such as Coca Cola,
+    have attained world-wide popularity.</p>
+
+<h2 id="HTML">What is HTML</h2>
+<p>
+    This is a short introduction to writing HTML. What is HTML? It is a special kind of text document that is used by
+    Web browsers to present text and graphics. The text includes markup tags such as
+<p> to indicate the start of a paragraph, and </p> to indicate the end of a paragraph. HTML documents are often refered
+to as "Web pages". The browser retrieves Web pages from Web servers that thanks to the Internet, can be pretty much
+anywhere in World.
+
+Many people still write HTML by hand using tools such as NotePad on Windows, or TextEdit on the Mac. This guide will get
+you up and running. Even if you don't intend to edit HTML directly and instead plan to use an HTML editor such as
+Netscape Composer, or W3C's Amaya, this guide will enable you to understand enough to make better use of such tools and
+how to make your HTML documents accessible on a wide range of browsers. Once you are comfortable with the basics of
+authoring HTML, you may want to learn how to add a touch of style using CSS, and to go on to try out features covered in
+my page on advanced HTML
+
+p.s. a good way to learn is to look at how other people have coded their html pages. To do this, click on the "View"
+menu and then on "Source". On some browsers, you instead need to click on the "File" menu and then on "View Source". Try
+it with this page to see how I have applied the ideas I explain below. You will find yourself developing a critical eye
+as many pages look rather a mess under the hood!
+
+For Mac users, before you can save a file with the ".html" extension, you will need to ensure that your document is
+formatted as plain text. For TextEdit, you can set this with the "Format" menu's "Make Plain Text" option.
+
+This page will teach you how to:<br>
+
+start with a title<br>
+add headings and paragraphs<br>
+add emphasis to your text<br>
+add images<br>
+add links to other pages<br>
+use various kinds of lists<br>
+If you are looking for something else, try the advanced HTML page.<br>
+</p>
+
+<h2 id="OGNL">Apache Commons OGNL - Object Graph Navigation Library</h2>
+<p>OGNL stands for Object-Graph Navigation Language; it is an expression language for getting and setting properties of
+    Java objects, plus other extras such as list projection and selection and lambda expressions. You use the same
+    expression for both getting and setting the value of a property.
+
+    The Ognl class contains convenience methods for evaluating OGNL expressions. You can do this in two stages, parsing
+    an expression into an internal form and then using that internal form to either set or get the value of a property;
+    or you can do it in a single stage, and get or set a property using the String form of the expression directly.
+
+    OGNL started out as a way to set up associations between UI components and controllers using property names. As the
+    desire for more complicated associations grew, Drew Davidson created what he called KVCL, for Key-Value Coding
+    Language, egged on by Luke Blanshard. Luke then reimplemented the language using ANTLR, came up with the new name,
+    and, egged on by Drew, filled it out to its current state. Later on Luke again reimplemented the language using
+    JavaCC. Further maintenance on all the code is done by Drew (with spiritual guidance from Luke).
+
+    We pronounce OGNL as a word, like the last syllables of a drunken pronunciation of "orthogonal".</p>
+
+<h2 id="spring-data-jpa">Spring data jpa - core concepts</h2>
+<p>The central interface in Spring Data repository abstraction is Repository (probably not that much of a surprise).
+    It takes the domain class to manage as well as the id type of the domain class as type arguments.
+    This interface acts primarily as a marker interface to capture the types to work with and to help you
+    to discover interfaces that extend this one. The CrudRepository provides sophisticated CRUD functionality for the
+    entity class that is being managed.</p>
+</body>
+
+<h2 id="sample-code">code sample</h2>
+<pre>
+    void Node::Remove()
+    {
+        if (prev)
+            prev->next = next;
+        else if (parent)
+            parent->SetContent(null);
+
+        if (next)
+            next->prev = prev;
+
+        parent = null;
+    }
+</pre>
+
+<table border="1" cellpadding="10" cellspacing="10">
+    <tr><th>Year</th><th>Sales</th></tr>
+    <tr><td>2000</td><td>$18M</td></tr>
+    <tr><td>2001</td><td>$25M</td></tr>
+    <tr><td>2002</td><td>$36M</td></tr>
+</table>
+</html>

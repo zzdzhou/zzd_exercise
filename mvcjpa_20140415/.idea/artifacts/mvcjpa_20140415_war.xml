@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvcjpa_20140415:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mvcjpa_20140415.war">
+      <element id="artifact" artifact-name="mvcjpa_20140415:war exploded" />
+    </root>
+  </artifact>
+</component>
