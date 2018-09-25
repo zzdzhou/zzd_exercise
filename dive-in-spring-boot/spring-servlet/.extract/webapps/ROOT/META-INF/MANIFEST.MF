@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-servlet
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Zhengde.ZHOU
+Implementation-Vendor-Id: jack.springboot
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/dive-in-spring-boot/spring-servlet
+

@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="autoconfigure" />
         <module name="spring-application" />
+        <module name="springbootrest" />
+        <module name="springservlet" />
       </profile>
     </annotationProcessing>
   </component>
