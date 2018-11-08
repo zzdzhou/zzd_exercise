@@ -10,6 +10,13 @@ public class ChainDataLoader extends DataLoader {
                 .runAsync(this::loadConfigurations)
                 .thenRun(this::loadUsers)
                 .thenRun(this::loadOrders)
-                .whenComplete(() -> )
+                .whenComplete((r, t) -> {
+                    System.out.println("[线程 : " + Thread.currentThread().getName() + "] 加载完成");
+                })
+                .join();
+    }
+
+    public static void main(String[] args) {
+        new ChainDataLoader().load();
     }
 }

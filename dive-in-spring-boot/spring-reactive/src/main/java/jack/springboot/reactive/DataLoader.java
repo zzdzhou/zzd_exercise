@@ -18,17 +18,17 @@ public class DataLoader {
     } // 总耗时 1s + 2s + 3s = 6s
 
     protected final void loadConfigurations() {
-        System.out.println("log loadConfigurations()");
+//        System.out.println("log loadConfigurations()");
         loadMock("loadConfigurations()", 1);
     }
 
     protected final void loadUsers() {
-        System.out.println("log loadUsers()");
+//        System.out.println("log loadUsers()");
         loadMock("loadUsers()", 2);
     }
 
     protected final void loadOrders() {
-        System.out.println("log loadOrders()");
+//        System.out.println("log loadOrders()");
         loadMock("loadOrders()", 3);
     }
 
@@ -36,9 +36,9 @@ public class DataLoader {
         try {
             long startTime = System.currentTimeMillis();
             long milliseconds = TimeUnit.SECONDS.toMillis(seconds);
-            System.out.println("log begin to sleep");
+//            System.out.println("log begin to sleep");
             Thread.sleep(milliseconds);
-            System.out.println("log stop sleeping");
+//            System.out.println("log stop sleeping");
             long costTime = System.currentTimeMillis() - startTime;
             System.out.printf("[线程 : %s] %s 耗时 : %d 毫秒\n",
                     Thread.currentThread().getName(), source, costTime);
